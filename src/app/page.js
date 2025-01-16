@@ -1,9 +1,10 @@
+import Services from '@/components/Services'
 import React from 'react'
 
 const HomePage = () => {
   return (
     <div className='container mx-auto'>
-      HomePage
+      <Services />
     </div>
   )
 }
