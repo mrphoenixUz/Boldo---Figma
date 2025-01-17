@@ -2,7 +2,6 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -21,10 +20,7 @@ export default function RootLayout({ children }) {
         className={`${manrope.variable} antialiased h-full flex flex-col`}
       >
         <div className="flex-1">
-          <div className="bg-[#0A2640] px-24">
-            <Navbar />
-            <Hero />
-          </div>
+          <Navbar />
           {children}
         </div>
         <Footer />
